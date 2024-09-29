@@ -1,20 +1,18 @@
 list = {
-    "1": "True",
-    "2": "True",
-    "3": "True",
-    "4": "True",
-    "5": "True",
-    "6": "True",
-    "7": "True",
-    "8": "True",
-    "9": "True",
+    "1": "T",
+    "2": "T",
+    "3": "T",
+    "4": "T",
+    "5": "T",
+    "6": "T",
+    "7": "T",
+    "8": "T",
+    "9": "T",
 }
-
-list["2"] = "False"
-list["7"] = "False"
+list["2"] = "F"
+list["7"] = "F"
 del list["3"]
-list["4"] = None
-
+list["4"] = 0
 print(list)
 
 
