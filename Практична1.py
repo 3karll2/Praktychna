@@ -1,6 +1,6 @@
 first_name = "Михайло"
 last_name = "Оніщук"
-yers = 16
+years = 16
 world = "Hellow world"
 
 print("Тип змінної ім'я : ",type(first_name))
