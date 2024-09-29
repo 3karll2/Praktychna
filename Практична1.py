@@ -1,5 +1,5 @@
-first_name = "Олександр"
-last_name = "Ковальчук"
+first_name = "Михайло"
+last_name = "Оніщук"
 yers = 16
 world = "Hellow world"
 
