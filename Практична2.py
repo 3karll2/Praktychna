@@ -1,5 +1,5 @@
-first_name = "Олександр"
-last_name = "Ковальчук"
+first_name = "Михайло"
+last_name = "Оніщук"
 age = 16
 
 if type(first_name) == type(last_name) and first_name != last_name:
