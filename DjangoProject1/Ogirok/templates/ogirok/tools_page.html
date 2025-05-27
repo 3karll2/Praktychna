@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Садовий інвентар</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Садовий інвентар</h1>
+    <table>
+        <tr>
+            <th>Назва</th>
+            <th>Категорія</th>
+            <th>Бренд</th>
+            <th>Ціна</th>
+            <th>Вага</th>
+            <th>Матеріал</th>
+        </tr>
+        {% for tool in tools %}
+        <tr>
+            <td>{{ tool.name }}</td>
+            <td>{{ tool.category.name }}</td>
+            <td>{{ tool.brand }}</td>
+            <td>{{ tool.price }} грн</td>
+            <td>{{ tool.weight }} кг</td>
+            <td>{{ tool.material }}</td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="6">Інвентар відсутній</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/">← Назад на головну</a>
+</body>
+</html>
